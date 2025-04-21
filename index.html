@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
     <link rel="stylesheet" href="src/style.css" />
     <title>World Clock</title>
 </head>
@@ -16,7 +19,7 @@
     <div class="site-container">
         <header class="site-header">
             <div class="container">
-                <h1 class="logo">✈️ World Clock</h1>
+                <h1 class="logo">🌍 World Clock</h1>
             </div>
         </header>
 
@@ -29,39 +32,38 @@
             <option value="">São Paulo, Brazil</option>
         </select>
 
-        <button class="btn-current-location" id="btn-current-location">📍 Use My Location</button>
+        <button class="btn-current-location" id="btn-current-location"><span class="material-symbols-outlined">
+                location_on
+            </span>Use My Location </button>
 
-        <main class="clock-list-container">
-            <ul id="clock-entries">
-                <li class="clock-entry">
-                    <h2>Phoenix</h2>
-                    <p class="time">10:56 AM</p>
-                    <p class="date">April 18th 2025</p>
-                </li>
-                <li class="clock-entry">
-                    <h2>New York</h2>
-                    <p class="time">1:56 PM</p>
-                    <p class="date">April 18th 2025</p>
-                </li>
-            </ul>
-        </main>
-
-
-        <footer class="footer">
-            <div class="footer-container">
-                <p class="footer-links">
-                    <a href="https://github.com/ksuarez032025" target="_blank" rel="noopener">
-                        © 2025 Kristian Suarez</a>
-                </p>
-                <ul class="footer-links">
-                    <li><a href="https://github.com/ksuarez032025/SheCodes-World-Clock" target="_blank"
-                            rel="noopener">GitHub</a></li>
-                    <li><a href="https://shecodes-worldclock-capturetime.netlify.app/" target="_blank"
-                            rel="noopener">Live
-                            Site</a></li>
-                </ul>
+        <div class="city">
+            <div>
+                <h2>Phoenix</h2>
+                <div class="date">April 18th 2025</div>
             </div>
+            <div class="time">6:33:48 <small>AM</small></div>
+        </div>
+        <div class="city">
+            <div>
+                <h2>New York</h2>
+                <div class="date">April 18th 2025</div>
+            </div>
+            <div class="time">9:33:48 <small>AM</small></div>
+        </div>
     </div>
+
+    <footer>
+        This project was coded by
+        <a href="https://github.com/ksuarez032025" target="_blank">
+            Kristian Suarez</a>, is
+        <a href="https://github.com/ksuarez032025/SheCodes-World-Clock" target="_blank">
+            open-sourced on GitHub</a> &
+        <a href="https://shecodes-worldclock-capturetime.netlify.app/" target="_blank">hosted on
+            Netlify</a>
+
+    </footer>
+
+
     <script src="src/index.js"></script>
 </body>
 
