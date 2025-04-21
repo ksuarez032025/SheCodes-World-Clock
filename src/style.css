@@ -21,7 +21,7 @@ h1 {
 
 .controls-container {
   display: block;
-  width: 65%;
+  width: 100%;
   border-radius: 4px;
   padding: 10px;
   font-size: 18px;
@@ -30,8 +30,6 @@ h1 {
 
 .btn-current-location {
   display: flex;
-  margin-left: auto;
-  margin-top: -44px;
   padding: 8px;
   text-align: center;
   border-radius: 4px;
@@ -41,6 +39,12 @@ h1 {
   background-color: #153b44;
   color: #add2c9;
   border: 1px solid #153b44;
+  width: 100%;
+  max-width: 220px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  margin: 12px auto;
 }
 
 .btn-current-location:hover {
