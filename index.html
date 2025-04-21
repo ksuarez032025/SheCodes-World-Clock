@@ -27,32 +27,33 @@
             </div>
         </header>
 
-        <select class="controls-container">
+        <select class="controls-container" id="city">
             <option value="">Select City</option>
-            <option value="">New York, USA</option>
-            <option value="">London, UK</option>
-            <option value="">Tokya, Japan</option>
-            <option value="">Syndey, Australia</option>
-            <option value="">São Paulo, Brazil</option>
+            <option value="America/New_York">New York, USA</option>
+            <option value="Europe/London">London, UK</option>
+            <option value="Asia/Tokyo">Tokya, Japan</option>
+            <option value="Australia/Sydney">Syndey, Australia</option>
+            <option value="America/Sao_Paulo">São Paulo, Brazil</option>
         </select>
 
         <button class="btn-current-location" id="btn-current-location"><span class="material-symbols-outlined">
                 location_on
             </span>Use My Location </button>
-
-        <div class="city" id="london">
-            <div>
-                <h2>London</h2>
-                <div class="date"></div>
+        <div id="cities">
+            <div class="city" id="london">
+                <div>
+                    <h2>London</h2>
+                    <div class="date"></div>
+                </div>
+                <div class="time"></div>
             </div>
-            <div class="time"></div>
-        </div>
-        <div class="city" id="new-york">
-            <div>
-                <h2>New York</h2>
-                <div class="date"></div>
+            <div class="city" id="new-york">
+                <div>
+                    <h2>New York</h2>
+                    <div class="date"></div>
+                </div>
+                <div class="time"></div>
             </div>
-            <div class="time"></div>
         </div>
     </div>
 
